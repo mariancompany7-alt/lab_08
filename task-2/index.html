@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_08</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #2d3748;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: block;
+        }  
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding: 1rem;
+            background: #f7fafc;
+        }
+
+        aside {
+            background: #edf2f7;
+            padding: 1rem;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        footer {
+            background: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 1.25rem;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            padding: 0.4rem 0.8rem;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 400px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            main, aside {
+                padding: 1.5rem;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 2rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: row;
+                gap: 1rem;
+            }
+
+            .container {
+                flex-direction: row;
+            }
+
+            main {
+                flex: 3;
+                padding: 2rem;
+            }
+
+            aside {
+                flex: 1;
+                border-top: none;
+                border-left: none;
+                border-right: 2px solid #e2e8f0;
+                min-width: 250px;
+                order: -1;
+            }
+
+            footer {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <h2>Main content</h2>
+            <div class="text">
+                <div class="paragraph-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sunt possimus quas quae, neque odio explicabo beatae blanditiis tempora, labore natus ea tempore facere eum ad? Praesentium eum corrupti aperiam!</p>
+                </div>
+                <div class="paragraph-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam eligendi excepturi magni saepe laborum totam non cupiditate, omnis minima ut natus impedit dolorem quas et tempora ratione soluta consequatur?</p>
+                </div>
+                <div class="paragraph-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptas, sed soluta unde quidem, consequatur qui adipisci temporibus similique aliquid quo quod, harum iure delectus ullam nihil rerum animi autem.</p>
+                </div>
+                <div class="paragraph-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reiciendis sapiente quis et sit ullam ex odit? Aspernatur libero quo in impedit voluptates magni ad? Fugiat harum quia nam iusto.</p>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="aside">
+                <h4>Aside</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae alias quo ad pariatur eaque. Libero, repellendus, deleniti quibusdam ipsum vitae fuga ipsa eveniet dolor corrupti excepturi dolorum quod distinctio cum.</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 My site. Copyright.</p>
+    </footer>
+
+</body>
+</html>
